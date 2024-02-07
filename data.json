@@ -1,84 +1,84 @@
 [
   {
     "id": 1,
-    "name": "Aquarius",
+    "sign": "aquarius",
     "start_date": "January 20",
     "end_date": "February 18",
     "desc": "Aquarius' are ..."
   },
   {
     "id": 2,
-    "name": "Pisces",
+    "sign": "pisces",
     "start_date": "February 19",
     "end_date": "March 20",
     "desc": "Pisces' are ..."
   },
   {
     "id": 3,
-    "name": "Aries",
+    "sign": "aries",
     "start_date": "March 21",
     "end_date": "April 19",
     "desc": "Aries' are ..."
   },
   {
     "id": 4,
-    "name": "Taurus",
+    "sign": "taurus",
     "start_date": "April 20",
     "end_date": "May 20",
     "desc": "Taurus' are ..."
   },
   {
     "id": 5,
-    "name": "Gemini",
+    "sign": "gemini",
     "start_date": "May 21",
     "end_date": "June 20",
     "desc": "Gemini's are ..."
   },
   {
     "id": 6,
-    "name": "Cancer",
+    "sign": "cancer",
     "start_date": "June 21",
     "end_date": "July 22",
     "desc": "Cancer's are ..."
   },
   {
     "id": 7,
-    "name": "Leo",
+    "sign": "leo",
     "start_date": "July 23",
     "end_date": "August 22",
     "desc": "Leo's are ..."
   },
   {
     "id": 8,
-    "name": "Virgo",
+    "sign": "virgo",
     "start_date": "August 23",
     "end_date": "September 22",
     "desc": "Virgo's are ..."
   },
   {
     "id": 9,
-    "name": "Libra",
+    "sign": "Libra",
     "start_date": "September 23",
     "end_date": "October 22",
     "desc": "Libra's are ..."
   },
   {
     "id": 10,
-    "name": "Scorpio",
+    "sign": "scorpio",
     "start_date": "October 23",
     "end_date": "November 21",
     "desc": "Scorpio's are ..."
   },
   {
     "id": 11,
-    "name": "Sagittarius",
+    "sign": "sagittarius",
     "start_date": "November 22",
     "end_date": "December 21",
     "desc": "Sagittarius' are ..."
   },
   {
     "id": 12,
-    "name": "Capricorn",
+    "sign": "capricorn",
     "start_date": "December 22",
     "end_date": "January 19",
     "desc": "Capricorn's are ..."
