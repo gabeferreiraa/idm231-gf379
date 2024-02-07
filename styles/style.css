@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  src: url(/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+  font-family: "Turpis";
+  src: url(/fonts/Turpis-GOgVm.ttf);
+}
+@font-face {
+  font-family: "Turpis_Italic";
+  src: url(/fonts/TurpisItalic-JR0j7.ttf);
+}
+
+:root {
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --black: #000000;
+  --gray: #e6ebef;
+  --yellow: #fac64c;
+  --purple: #1e1939;
+  --light-blue: #72b2b9;
+
+  --primary-font: "Turpis";
+  --primary-font-italic: "Turpis_Italic";
+
+  --secondary-font: "Inter";
+
+  --base-padding: 1em;
+  --base-margin: 1em;
+
+  --letter-spacing-xs: 0.2rem;
+  --letter-spacing-s: 0.35rem;
+  --letter-spacing-m: 0.5rem;
+  --letter-spacing-l: 0.8rem;
+
+  --xs-text: 0.65rem;
+  --s-text: 0.875rem;
+  --m-text: 1rem;
+  --l-text: 1.125rem;
+  --xl-text: 1.5rem;
+
+  --margin-l: 3rem;
+}
