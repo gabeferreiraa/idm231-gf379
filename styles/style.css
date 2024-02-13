@@ -50,3 +50,6 @@
 
   --margin-l: 3rem;
 }
+p {
+  font-family: var(--secondary-font);
+}
