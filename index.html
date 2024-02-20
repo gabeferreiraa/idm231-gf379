@@ -15,7 +15,7 @@
   </head>
   <body>
     <main
-      class="w-full h-screen bg-purple-900 text-purple justify-center items-start grid grid-cols-1 gap-4 sm:grid-cols-2"
+      class="w-full h-screen bg-purple-900 text-purple justify-center items-start grid grid-cols-1 gap-4 sm:grid-cols-2 relative"
     >
       <div
         class="self-start col-span-1 sm:col-span-2 w-full bg-black-950 h-16 flex justify-start items-center px-12 text-yellow-default text-3xl font-primary font-normal tracking-widest"
@@ -23,9 +23,23 @@
         AstroPulse
       </div>
       <div
-        class="w-24 h-24 grid grid-cols-subgrid gap-4 justify-center items-center px-20 mb-4 sm:mb-0"
+        id="help-screen"
+        class="hidden flex fixed top-0 left-0 w-full h-full justify-center items-center bg-gray-900 bg-opacity-50 z-50"
       >
-        <h1 class="text-black text-3xl font-secondary">
+        <div class="bg-light-blue-default p-10 rounded-lg text-center">
+          <h2 class="font-secondary text-2xl font-bold mb-4">
+            Welcome to AstroPulse
+          </h2>
+          <p class="font-secondary text-lg text-gray-800">
+            Please enter your birthday to continue
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="w-24 h-24 grid grid-cols-subgrid gap-4 justify-center items-center px-20 mt-12 sm:mb-0"
+      >
+        <h1 class="text-black text-3xl font-bold font-secondary">
           Please enter your birthdate... !
         </h1>
         <input
@@ -35,13 +49,15 @@
           id="birthday-value"
         />
       </div>
+
       <div class="place-self-center">
         <svg width="400" height="400" viewBox="0 0 500 500">
-          <g transform="translate(100 100) scale(3 3)">
+          <g transform="translate(75 75) scale(2.75 2.75)">
             <path />
           </g>
         </svg>
       </div>
+
       <div
         class="text-light-blue-default col-span-1 justify-center w-96 h-96 mx-20"
       >
@@ -52,7 +68,7 @@
             >
               Heading Yuh
             </h2>
-            <p class="leading-6 text-gray-50 mb-10">
+            <p id="target-text" class="leading-6 text-gray-50 mb-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
               impedit et repudiandae incidunt architecto dolorum delectus ab
               libero a ratione temporibus quis enim voluptate blanditiis, ipsam
@@ -75,5 +91,12 @@
         </ol>
       </div>
     </main>
+
+    <div
+      id="help"
+      class="text-black-950 bg-yellow-default right-6 bottom-6 fixed w-20 h-20 rounded-full flex justify-center items-center p-8 hover:bg-yellow-200"
+    >
+      ?
+    </div>
   </body>
 </html>

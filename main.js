@@ -1,6 +1,7 @@
 import { animate } from "motion";
 import { interpolate } from "flubber";
 import { paths } from "./paths";
+import { data } from "autoprefixer";
 
 document.addEventListener("DOMContentLoaded", function () {
   const birthdayInput = document.querySelector("#birthday-value");
@@ -30,10 +31,8 @@ async function fetchData(birthday) {
       "December",
     ];
 
-    let month = months[birthday.getMonth()];
-    let day = birthday.getDate() + 1;
-
-    let zodiacValue = month + " " + day;
+    let birthMonth = birthday.getMonth();
+    let birthDay = birthday.getDate();
 
     let signMatch = data.find((sign) => {
       let startDateParts = sign.start_date.split(" ");
@@ -43,15 +42,18 @@ async function fetchData(birthday) {
       let startDay = parseInt(startDateParts[1]);
       let endDay = parseInt(endDateParts[1]);
 
-      return (
-        (startMonth < endMonth ||
-          (startMonth === endMonth && startDay <= endDay)) &&
-        (startMonth < birthday.getMonth() ||
-          (startMonth === birthday.getMonth() &&
-            startDay <= birthday.getDate())) &&
-        (endMonth > birthday.getMonth() ||
-          (endMonth === birthday.getMonth() && endDay >= birthday.getDate()))
-      );
+      // Check if the birthdate falls within the sign's date range
+      if (
+        (birthMonth === startMonth && birthDay >= startDay) ||
+        (birthMonth === endMonth && birthDay <= endDay) ||
+        (birthMonth === startMonth - 1 &&
+          birthDay >= startDay &&
+          birthDay <= 31) || // Transition from December to January
+        (birthMonth === endMonth && birthDay >= 1 && birthDay <= endDay) // Transition from December to January
+      ) {
+        return true;
+      }
+      return false;
     });
 
     togglePath(signMatch); // Call togglePath with signMatch
@@ -74,9 +76,11 @@ function togglePath(signMatch) {
       break;
     case "scorpio":
       currentPath = paths.scorpio;
+
       break;
     case "virgo":
       currentPath = paths.virgo;
+
       break;
     case "pisces":
       currentPath = paths.pisces;
@@ -123,3 +127,13 @@ function togglePath(signMatch) {
   animate(path, { fill: currentPath.color }, transition);
   animate((progress) => path.setAttribute("d", mixPaths(progress)), transition);
 }
+
+const helpButton = document.querySelector("#help");
+const helpScreen = document.querySelector("#help-screen");
+
+helpButton.addEventListener("click", () => {
+  helpScreen.classList.toggle("hidden");
+});
+helpScreen.addEventListener("click", () => {
+  helpScreen.classList.toggle("hidden");
+});
