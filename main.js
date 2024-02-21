@@ -1,7 +1,6 @@
 import { animate } from "motion";
 import { interpolate } from "flubber";
 import { paths } from "./paths";
-import { data } from "autoprefixer";
 
 document.addEventListener("DOMContentLoaded", function () {
   const birthdayInput = document.querySelector("#birthday-value");

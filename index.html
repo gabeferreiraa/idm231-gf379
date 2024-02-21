@@ -15,7 +15,7 @@
   </head>
   <body>
     <main
-      class="w-full h-screen bg-purple-900 text-purple justify-center items-start grid grid-cols-1 gap-4 sm:grid-cols-2 relative"
+      class="w-screen h-screen bg-purple-900 text-purple items-start grid grid-cols-1 sm:grid-cols-2 relative"
     >
       <div
         class="self-start col-span-1 sm:col-span-2 w-full bg-black-950 h-16 flex justify-start items-center px-12 text-yellow-default text-3xl font-primary font-normal tracking-widest"
@@ -31,16 +31,14 @@
             Welcome to AstroPulse
           </h2>
           <p class="font-secondary text-lg text-gray-800">
-            Please enter your birthday to continue
+            Enter your birthday to continue
           </p>
         </div>
       </div>
 
-      <div
-        class="w-24 h-24 grid grid-cols-subgrid gap-4 justify-center items-center px-20 mt-12 sm:mb-0"
-      >
+      <div class="flex flex-col gap-4 justify-center items-start ml-20 sm:mb-0">
         <h1 class="text-black text-3xl font-bold font-secondary">
-          Please enter your birthdate... !
+          Enter your birthdate...
         </h1>
         <input
           class="p-4 w-64 font-secondary"
@@ -50,8 +48,13 @@
         />
       </div>
 
-      <div class="place-self-center">
-        <svg width="400" height="400" viewBox="0 0 500 500">
+      <div class="w-full sm:w-fit flex justify-center sm:col-span-1">
+        <svg
+          id="svg-animation"
+          viewBox="0 0 500 500"
+          class="w-48 h-48 sm:min-w-96 sm:min-h-96"
+        >
+          <!-- Default size: 48x48, Phone size: 64x64 -->
           <g transform="translate(75 75) scale(2.75 2.75)">
             <path />
           </g>
@@ -59,42 +62,44 @@
       </div>
 
       <div
-        class="text-light-blue-default col-span-1 justify-center w-96 h-96 mx-20"
+        class="ml-4 h-32 sm:ml-20 col-span-1 w-96 sm:w-4/6 text-center sm:text-left"
       >
-        <ol>
-          <li>
-            <h2
-              class="text-3xl text-light-blue-300 mb-2 tracking-wider font-primary"
-            >
-              Heading Yuh
-            </h2>
-            <p id="target-text" class="leading-6 text-gray-50 mb-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-              impedit et repudiandae incidunt architecto dolorum delectus ab
-              libero a ratione temporibus quis enim voluptate blanditiis, ipsam
-              asperiores recusandae nemo ex?
-            </p>
-          </li>
-          <li>
-            <h2
-              class="text-3xl text-light-blue-300 mb-2 tracking-wider font-primary"
-            >
-              ROCKSTARRRR
-            </h2>
-            <p class="text-gray-50 leading-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae dolor modi ex, odio odit illum maiores cum! Culpa
-              exercitationem itaque qui. Sequi, labore. Deleniti sunt,
-              reiciendis voluptatem quaerat iure saepe.
-            </p>
-          </li>
-        </ol>
+        <h2
+          class="text-2xl text-light-blue-300 mb-2 tracking-wider font-primary sm:text-4xl"
+        >
+          Heading Yuh
+        </h2>
+        <p
+          id="target-text"
+          class="leading-6 text-sm text-gray-50 mb-5 sm:mb-10 sm:text-lg"
+        >
+          Forem ipsum dolor sit amet consectetur adipisicing elit. Quae impedit
+          et repudiandae incidunt architecto dolorum delectus ab libero a
+          ratione temporibus quis enim voluptate blanditiis, ipsam asperiores
+          recusandae nemo ex?
+        </p>
+      </div>
+      <div class="ml-4 h-32 col-span-1 w-96 sm:w-4/6 text-center sm:text-left">
+        <h2
+          class="text-2xl text-light-blue-300 mb-2 tracking-wider font-primary sm:text-4xl"
+        >
+          ROCKSTARRRR
+        </h2>
+        <p
+          id="target-text"
+          class="leading-6 text-sm text-gray-50 mb-0 sm:mb-10 sm:text-lg"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          dolor modi ex, odio odit illum maiores cum! Culpa exercitationem
+          itaque qui. Sequi, labore. Deleniti sunt, reiciendis voluptatem
+          quaerat iure saepe.
+        </p>
       </div>
     </main>
 
     <div
       id="help"
-      class="text-black-950 bg-yellow-default right-6 bottom-6 fixed w-20 h-20 rounded-full flex justify-center items-center p-8 hover:bg-yellow-200"
+      class="text-black-950 bg-yellow-default right-2 bottom-2 fixed w-8 h-8 rounded-full flex justify-center items-center p-6 hover:bg-yellow-200 sm:right-6 sm:bottom-6 sm:w-20 sm:h-20 sm:p-8"
     >
       ?
     </div>
