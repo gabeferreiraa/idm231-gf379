@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 async function fetchData(birthday) {
   try {
-    const response = await fetch("./data.json");
+    const response = await fetch("/public/data.json");
     const data = await response.json();
 
     const months = [
