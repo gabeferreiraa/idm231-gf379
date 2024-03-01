@@ -4,83 +4,83 @@
     "sign": "aquarius",
     "start_date": "January 20",
     "end_date": "February 18",
-    "desc": "Aquarius' are ..."
+    "desc": "Aquarius is an air sign associated with innovation, independence, and humanitarianism. They're known for their unique perspective, progressive ideals, and commitment to social causes, often marching to the beat of their own drum."
   },
   {
     "id": 2,
     "sign": "pisces",
     "start_date": "February 19",
     "end_date": "March 20",
-    "desc": "Pisces' are ..."
+    "desc": " Pisces is a water sign known for its empathy, imagination, and sensitivity. They're highly intuitive and artistic individuals who are deeply in tune with their emotions and the emotions of others, often seeking to bring compassion and healing to the world."
   },
   {
     "id": 3,
     "sign": "aries",
     "start_date": "March 21",
     "end_date": "April 19",
-    "desc": "Aries' are ..."
+    "desc": "Aries is a fire sign known for its dynamic energy, courage, and assertiveness. They're often seen as natural leaders who aren't afraid to take charge and pursue their goals with passion and determination."
   },
   {
     "id": 4,
     "sign": "taurus",
     "start_date": "April 20",
     "end_date": "May 20",
-    "desc": "Taurus' are ..."
+    "desc": "Taurus is an earth sign characterized by stability, reliability, and practicality. They're known for their strong work ethic, love of comfort and luxury, and steadfast loyalty to their friends and family."
   },
   {
     "id": 5,
     "sign": "gemini",
     "start_date": "May 21",
     "end_date": "June 20",
-    "desc": "Gemini's are ..."
+    "desc": "Gemini is an air sign associated with curiosity, adaptability, and sociability. Geminis are known for their quick wit, versatility, and love of communication and intellectual stimulation."
   },
   {
     "id": 6,
     "sign": "cancer",
     "start_date": "June 21",
     "end_date": "July 22",
-    "desc": "Cancer's are ..."
+    "desc": " Cancer is a water sign known for its emotional depth, intuition, and nurturing nature. They're highly empathetic and protective of their loved ones, and they often prioritize creating a sense of security and belonging in their relationships."
   },
   {
     "id": 7,
     "sign": "leo",
     "start_date": "July 23",
     "end_date": "August 22",
-    "desc": "Leo's are ..."
+    "desc": "Leo is a fire sign characterized by confidence, creativity, and generosity. Leos are natural-born leaders who thrive in the spotlight, and they're known for their warmth, charisma, and passion for self-expression."
   },
   {
     "id": 8,
     "sign": "virgo",
     "start_date": "August 23",
     "end_date": "September 22",
-    "desc": "Virgo's are ..."
+    "desc": "Virgo is an earth sign known for its practicality, attention to detail, and analytical nature. They're highly organized and efficient individuals who excel at problem-solving and serving others with their practical skills."
   },
   {
     "id": 9,
     "sign": "libra",
     "start_date": "September 23",
     "end_date": "October 22",
-    "desc": "Libra's are ..."
+    "desc": "Libra is an air sign associated with balance, harmony, and diplomacy. They're known for their fairness, charm, and ability to see multiple perspectives, making them natural peacemakers and mediators."
   },
   {
     "id": 10,
     "sign": "scorpio",
     "start_date": "October 23",
     "end_date": "November 21",
-    "desc": "Scorpio's are ..."
+    "desc": " Scorpio is a water sign known for its intensity, passion, and depth. They're highly intuitive and mysterious individuals who are not afraid to delve into the darker aspects of life, and they're fiercely loyal to those they care about."
   },
   {
     "id": 11,
     "sign": "sagittarius",
     "start_date": "November 22",
     "end_date": "December 21",
-    "desc": "Sagittarius' are ..."
+    "desc": "Sagittarius is a fire sign characterized by its adventurous spirit, optimism, and love of freedom. They're known for their philosophical outlook on life, thirst for knowledge, and willingness to explore new ideas and experiences."
   },
   {
     "id": 12,
     "sign": "capricorn",
     "start_date": "December 22",
     "end_date": "January 19",
-    "desc": "Capricorn's are ..."
+    "desc": "Capricorn is an earth sign known for its ambition, discipline, and practicality. They're highly driven individuals who excel at long-term planning and goal-setting, and they're often seen as responsible and reliable leaders."
   }
 ]

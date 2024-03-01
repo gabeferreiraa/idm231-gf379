@@ -55,26 +55,33 @@ async function fetchData(birthday) {
       return false;
     });
 
-    togglePath(signMatch); // Call togglePath with signMatch
+    if (signMatch) {
+      const description = signMatch.desc;
+      togglePath(signMatch, description); // Pass the description to the togglePath function
+    }
   } catch (error) {
     console.log(error);
   }
 }
 
-function togglePath(signMatch) {
+function togglePath(signMatch, description) {
   const path = document.querySelector("path");
   const transition = { duration: 0.5 };
 
   if (!signMatch) return; // Ensure signMatch exists
+
+  let signDesc = document.querySelector("#target-text-1");
 
   let currentPath;
 
   switch (signMatch.sign.toLowerCase()) {
     case "capricorn":
       currentPath = paths.capricorn;
+      signDesc.textContent = capricornText;
       break;
     case "scorpio":
       currentPath = paths.scorpio;
+      signDesc.textContent = scorpioText;
 
       break;
     case "virgo":
@@ -113,6 +120,7 @@ function togglePath(signMatch) {
       currentPath = paths.aries;
   }
   console.log(signMatch.sign);
+  signDesc.textContent = description;
   // console.log("Current Path:", currentPath); // Log the current path object
   // console.log("Path D Attribute:", currentPath.d); // Log the 'd' attribute of the path
 
