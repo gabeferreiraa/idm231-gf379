@@ -29,6 +29,7 @@ async function fetchData(birthday) {
       "November",
       "December",
     ];
+    console.log(data);
 
     let birthMonth = birthday.getMonth();
     let birthDay = birthday.getDate();
