@@ -77,16 +77,12 @@ function togglePath(signMatch, description) {
   switch (signMatch.sign.toLowerCase()) {
     case "capricorn":
       currentPath = paths.capricorn;
-      signDesc.textContent = capricornText;
       break;
     case "scorpio":
       currentPath = paths.scorpio;
-      signDesc.textContent = scorpioText;
-
       break;
     case "virgo":
       currentPath = paths.virgo;
-
       break;
     case "pisces":
       currentPath = paths.pisces;
@@ -115,14 +111,14 @@ function togglePath(signMatch, description) {
     case "aries":
       currentPath = paths.aries;
       break;
-
     default:
       currentPath = paths.aries;
   }
-  console.log(signMatch.sign);
+
+  // Set the description text content
   signDesc.textContent = description;
-  // console.log("Current Path:", currentPath); // Log the current path object
-  // console.log("Path D Attribute:", currentPath.d); // Log the 'd' attribute of the path
+
+  console.log(signMatch.sign);
 
   path.setAttribute("fill", currentPath.color);
   path.setAttribute("d", currentPath.d);
