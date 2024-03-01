@@ -1,6 +1,7 @@
 import { animate } from "motion";
 import { interpolate } from "flubber";
 import { paths } from "./paths";
+import data from "./data.json";
 
 document.addEventListener("DOMContentLoaded", function () {
   const birthdayInput = document.querySelector("#birthday-value");
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 async function fetchData(birthday) {
   try {
-    const response = await fetch("/data.json");
+    const response = await fetch("./data.json");
     const data = await response.json();
 
     const months = [
