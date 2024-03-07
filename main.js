@@ -2,6 +2,34 @@ import { animate } from "motion";
 import { interpolate } from "flubber";
 import { paths } from "./paths";
 
+const capricorn_audio = "/audio/capricorn.mp3";
+const aquarius_audio = "/audio/aquarius.mp3";
+const pisces_audio = "/audio/pisces.mp3";
+const aries_audio = "/audio/aries.mp3";
+const taurus_audio = "/audio/taurus.mp3";
+const gemini_audio = "/audio/gemini.mp3";
+const cancer_audio = "/audio/cancer.mp3";
+const leo_audio = "/audio/leo.mp3";
+const virgo_audio = "/audio/virgo.mp3";
+const libra_audio = "/audio/libra.mp3";
+const scorpio_audio = "/audio/scorpio.mp3";
+const sagittarius_audio = "/audio/sagittarius.mp3";
+
+const signAudioMap = {
+  capricorn: capricorn_audio,
+  aquarius: aquarius_audio,
+  pisces: pisces_audio,
+  aries: aries_audio,
+  taurus: taurus_audio,
+  gemini: gemini_audio,
+  cancer: cancer_audio,
+  leo: leo_audio,
+  virgo: virgo_audio,
+  libra: libra_audio,
+  scorpio: scorpio_audio,
+  sagittarius: sagittarius_audio,
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   const birthdayInput = document.querySelector("#birthday-value");
 
@@ -118,6 +146,14 @@ function togglePath(signMatch, description) {
 
   // Set the description text content
   signDesc.textContent = description;
+
+  const audioPath = signAudioMap[signMatch.sign.toLowerCase()];
+  if (audioPath) {
+    const audio = new Audio(audioPath);
+    audio
+      .play()
+      .catch((error) => console.error("Error playing the audio:", error));
+  }
 
   console.log(signMatch.sign);
 
