@@ -36,7 +36,39 @@ document.addEventListener("DOMContentLoaded", function () {
   birthdayInput.addEventListener("change", function () {
     fetchData(this.valueAsDate);
   });
+
+  // Fetch zodiac data and set up button click events
+  fetchZodiacData().then((data) => {
+    setupZodiacButtons(data);
+  });
 });
+
+async function fetchZodiacData() {
+  try {
+    const response = await fetch("./data.json");
+    return await response.json();
+  } catch (error) {
+    console.error("Failed to load zodiac data:", error);
+    return [];
+  }
+}
+
+function setupZodiacButtons(data) {
+  const zodiacButtons = document.querySelectorAll("button[data-sign]");
+  zodiacButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const signName = this.getAttribute("data-sign");
+      const signData = data.find(
+        (sign) => sign.sign.toLowerCase() === signName,
+      );
+      if (signData) {
+        togglePath(signData, signData.desc);
+      } else {
+        console.error("Sign data not found for:", signName);
+      }
+    });
+  });
+}
 
 async function fetchData(birthday) {
   try {

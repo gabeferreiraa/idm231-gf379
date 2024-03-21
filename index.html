@@ -21,7 +21,7 @@
   </head>
   <body>
     <main
-      class="w-screen h-screen bg-purple-900 text-purple items-start grid grid-cols-1 sm:grid-cols-2 relative"
+      class="w-screen h-[110vh] bg-purple-900 text-purple items-start grid grid-cols-1 sm:grid-cols-2 relative"
     >
       <div
         class="self-start col-span-1 sm:col-span-2 w-full bg-black-950 h-16 flex justify-start items-center px-12 text-yellow-default text-3xl font-primary font-normal tracking-widest"
@@ -37,7 +37,7 @@
             Welcome to AstroPulse
           </h2>
           <p class="font-secondary text-lg text-gray-800">
-            Enter your birthday to continue
+            Enter your birthday or select an option to continue.
           </p>
         </div>
       </div>
@@ -71,9 +71,9 @@
         class="ml-4 h-32 sm:ml-20 col-span-1 w-96 sm:w-4/6 text-center sm:text-left"
       >
         <h2
-          class="text-2xl text-light-blue-300 mb-2 tracking-wider font-primary sm:text-4xl"
+          class="text-xl text-light-blue-300 mb-2 tracking-wider font-primary sm:text-4xl"
         >
-          Description
+          Sign description
         </h2>
         <p
           id="target-text-1"
@@ -87,20 +87,25 @@
       </div>
       <audio id="audio_player"></audio>
       <div class="ml-4 h-32 col-span-1 w-96 sm:w-4/6 text-center sm:text-left mb-4">
-        <h2
-          class="text-2xl text-light-blue-300 mb-2 tracking-wider font-primary sm:text-4xl"
-        >
-          Side Description
-        </h2>
         <p
-          id="target-text-2"
-          class="leading-6 text-sm text-gray-50 mb-0 sm:mb-10 sm:text-lg"
+          class="text-lg text-light-blue-300 mb-1 tracking-wider font-primary sm:text-4xl"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          dolor modi ex, odio odit illum maiores cum! Culpa exercitationem
-          itaque qui. Sequi, labore. Deleniti sunt, reiciendis voluptatem
-          quaerat iure saepe.
+          Sign Selection
         </p>
+        <div class="grid grid-cols-4 gap-1 p-0">
+          <button class="bg-yellow-default text-black-950 w-16 h-16 rounded-full flex justify-center items-center text-xs shadow-md" data-sign="aries">Aries</button>
+          <button class="bg-yellow-default text-black-950 w-16 h-16 rounded-full flex justify-center items-center text-xs shadow-md" data-sign="taurus">Taurus</button>
+          <button class="bg-yellow-default text-black-950 w-16 h-16 rounded-full flex justify-center items-center text-xs shadow-md" data-sign="gemini">Gemini</button>
+          <button class="bg-yellow-default text-black-950 w-16 h-16 rounded-full flex justify-center items-center text-xs shadow-md" data-sign="cancer">Cancer</button>
+          <button class="bg-yellow-default text-black-950 w-16 h-16 rounded-full flex justify-center items-center text-xs shadow-md" data-sign="leo">Leo</button>
+          <button class="bg-yellow-default text-black-950 w-16 h-16 rounded-full flex justify-center items-center text-xs shadow-md" data-sign="virgo">Virgo</button>
+          <button class="bg-yellow-default text-black-950 w-16 h-16 rounded-full flex justify-center items-center text-xs shadow-md" data-sign="libra">Libra</button>
+          <button class="bg-yellow-default text-black-950 w-16 h-16 rounded-full flex justify-center items-center text-xs shadow-md" data-sign="scorpio">Scorpio</button>
+          <button class="bg-yellow-default text-black-950 w-16 h-16 rounded-full flex justify-center items-center text-xs shadow-md" data-sign="sagittarius">Sagittarius</button>
+          <button class="bg-yellow-default text-black-950 w-16 h-16 rounded-full flex justify-center items-center text-xs shadow-md" data-sign="capricorn">Capricorn</button>
+          <button class="bg-yellow-default text-black-950 w-16 h-16 rounded-full flex justify-center items-center text-xs shadow-md" data-sign="aquarius">Aquarius</button>
+          <button class="bg-yellow-default text-black-950 w-16 h-16 rounded-full flex justify-center items-center text-xs shadow-md" data-sign="pisces">Pisces</button>
+        </div>
       </div>
     </main>
 
